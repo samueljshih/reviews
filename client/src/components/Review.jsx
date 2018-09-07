@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 // {
 //   image:
@@ -12,12 +13,14 @@ import React from 'react';
 
 const Review = props => {
   const { image, name, date, starRating, review } = props.review;
+  console.log(Date.parse(date));
+  console.log(moment(Date.parse(date)));
   return (
     <div className="reviews">
       <img src={image} height="42" width="42" className="reviewImage" />
       <div className="reviewDetails">
         <div className="reviewName">{name}</div>
-        <div className="reviewDate">{Date.parse(date)}</div>
+        <div className="reviewDate">{date}</div>
         <div className="reviewText">{review}</div>
       </div>
       <hr />
