@@ -40,6 +40,8 @@ img {
 .reviews {
   display: flex;
 }
+.reviewDetails {
+}
 
 .reviewName,
 .reviewDate,
@@ -49,7 +51,6 @@ img {
 }
 
 .reviewDetails {
-  flex: 2;
 }
 
 .contactPlaceholder {
