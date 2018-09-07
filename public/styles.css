@@ -1,0 +1,66 @@
+/* GENERAL STYLING */
+body {
+  background-color: #ededef;
+}
+
+h1,
+h3,
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
+/* Class Styling */
+
+.reviews-section {
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reviews-container {
+  font-size: 16px;
+  padding: 20px;
+  flex: 2;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.reviews {
+  display: flex;
+}
+
+.reviewImage {
+}
+
+.reviewDetails {
+  flex: 2;
+}
+
+.contactPlaceholder {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 30%;
+  flex: 1;
+}
+
+.center-container {
+  display: flex;
+}
+
+.center-me {
+  margin: auto;
+  background-color: burlywood;
+}
