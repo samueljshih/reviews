@@ -6,7 +6,11 @@ const Review = props => {
   var parsedDate = Date.parse(date);
   return (
     <div className="reviews">
-      <img src={image} height="42" width="42" className="reviewImage" />
+      <div className="imageContainer">
+        <a href="#">
+          <img src={image} height="42" width="42" className="reviewImage" />
+        </a>
+      </div>
       <div className="reviewDetails">
         <div className="reviewName">{name}</div>
         <div className="reviewDate">
@@ -14,7 +18,6 @@ const Review = props => {
         </div>
         <div className="reviewText">{review}</div>
       </div>
-      <hr />
     </div>
   );
 };

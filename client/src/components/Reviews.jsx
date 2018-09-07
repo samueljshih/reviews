@@ -8,10 +8,17 @@ const Reviews = props => {
   return (
     <div className="reviews-section">
       <div className="reviews-container">
-        <h3>GOOGLE REVIEWS</h3>
-        <hr />
+        <div className="google-container">
+          <h3>GOOGLE REVIEWS</h3>
+          <hr />
+        </div>
         {reviews.map(review => {
-          return <Review review={review} />;
+          return (
+            <React.Fragment>
+              <Review review={review} />
+              <hr />
+            </React.Fragment>
+          );
         })}
       </div>
       <div className="contactPlaceholder" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import Reviews from './Reviews.jsx';
+import axios from 'axios';
 
 var restaurant = {
   name: 'Schneider - Heller',
@@ -26,7 +27,7 @@ var restaurant = {
       date: '2018-09-06T13:00:40.804Z',
       starRating: 2,
       review:
-        'Et consequatur labore consectetur. Ratione cum quidem debitis rerum. Quas harum cupiditate. Ducimus similique ea sequi.'
+        'Et consequatur sabeus dem lentarra un eckacks labore consectetur. Ratione cum quidem debitis rerum. Quas harum cupiditate. Ducimus similique ea sequi.'
     },
     {
       image:
@@ -74,6 +75,22 @@ class App extends React.Component {
       restaurant: restaurant
     };
   }
+
+  componentDidMount() {
+    var restaurant;
+    axios
+      .get('http://localhost:3002/restaurants/name')
+      .then(data => {
+        restaurant = data.data;
+        this.setState({
+          restaurant: restaurant
+        });
+      })
+      .catch(err => {
+        console.log('Error', err);
+      });
+  }
+
   render() {
     return (
       <div>
