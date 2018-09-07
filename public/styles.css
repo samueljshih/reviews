@@ -41,7 +41,11 @@ img {
   display: flex;
 }
 
-.reviewImage {
+.reviewName,
+.reviewDate,
+.reviewText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 .reviewDetails {
