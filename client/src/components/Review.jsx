@@ -16,7 +16,22 @@ const Review = props => {
         <div className="reviewDate">
           {moment(parsedDate).format('MMMM Do YYYY')}
         </div>
-        <div className="reviewText">{review}</div>
+        <div className="reviewText">
+          <div />
+          <div>
+            {/* {' '}
+            <svg>
+              <polygon
+                height="210"
+                width="500"
+                fill="#101820"
+                points="75.2,107.7 73.7,103 77.7,100.2 72.8,100.2 71.2,95.2 69.6,100.2 64.7,100.2
+        68.7,103 67.2,107.7 71.2,104.8"
+              />
+            </svg> */}
+            {review}
+          </div>
+        </div>
       </div>
     </div>
   );
