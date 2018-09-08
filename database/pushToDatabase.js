@@ -33,3 +33,5 @@ var fakeRestaurants = fakeData.restaurants;
 
 // Insert everything to data
 Restaurant.insertMany(fakeRestaurants);
+
+module.exports.Restaurant = Restaurant;
