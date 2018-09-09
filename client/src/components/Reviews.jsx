@@ -22,6 +22,7 @@ const Reviews = props => {
               starSpacing="2px"
             />
           </div>
+          <div className="googlePlaceholder" />
         </div>
         <hr />
 
