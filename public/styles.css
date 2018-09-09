@@ -38,7 +38,7 @@ polygon {
   margin: 40px auto 0 auto;
   display: flex;
   justify-content: space-around;
-  padding-left: 32px;
+  padding-left: 70px;
 }
 
 .reviews-container {
@@ -78,9 +78,19 @@ polygon {
   color: #656666;
 }
 
-.google-container > h3 {
-  padding-bottom: 34px;
+.googleReview {
+  display: flex;
+  padding-bottom: 20px;
 }
+
+.googleStarRating {
+  margin: auto;
+}
+.googleReview {
+  margin-right: 32px;
+  font-family: 'Calibre-Regular', sans-serif;
+}
+
 .logo {
   color: #9c0029;
   font-size: 80px;

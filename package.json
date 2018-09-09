@@ -9,11 +9,13 @@
   },
   "scripts": {
     "webpack": "webpack -d --watch",
-    "server": "nodemon ./server/server.js"
+    "server": "nodemon ./server/server.js",
+    "test": "jest"
   },
   "dependencies": {
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
+    "puppeteer": "^1.8.0",
     "react-star-ratings": "^2.3.0"
   },
   "devDependencies": {
@@ -34,6 +36,7 @@
     "eslint-plugin-react": "^7.11.1",
     "express": "^4.16.3",
     "faker": "^4.1.0",
+    "jest": "^23.5.0",
     "mongoose": "^5.2.13",
     "nodemon": "^1.18.4",
     "prettier": "^1.14.2",

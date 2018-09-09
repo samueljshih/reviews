@@ -9,19 +9,22 @@ const Reviews = props => {
   return (
     <div className="reviews-section">
       <div className="reviews-container">
-        <div className="google-container">
-          <h3>
-            GOOGLE REVIEWS 4.1
+        <div className="googleReview">
+          <div className="googleReviewText">
+            <h3>GOOGLE REVIEWS</h3>
+          </div>
+          <div className="googleStarRating">
+            4.1
             <StarRatings
               starRatedColor="#101820"
               rating={5}
               starDimension="15px"
               starSpacing="2px"
             />
-          </h3>
-
-          <hr />
+          </div>
         </div>
+        <hr />
+
         {reviews.map(review => {
           return (
             <React.Fragment>
