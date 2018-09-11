@@ -30,19 +30,25 @@ describe('componentRendering', async () => {
     const title = await page.$eval(logo, e => e.textContent);
     expect(title).toEqual('Zagat');
   });
-});
 
-describe('fetchRestaurants', async () => {
-  // beforeEach(async () => {
-  //   await page.goto(pageUrl, { waitUntil: 'networkidle2' });
-  // });
-
-  test('getting reviews from database', () => {
-    // expect.assertions(1);
-    var restaurant = axios.get('http://localhost:3002/restaurants/name');
-    return restaurant.then(data => {
-      var restaurantData = data.data;
-      expect(typeof restaurantData.reviews).toEqual('array');
-    });
+  test('google rating is rendering', async () => {
+    var googleRating = '.googleReviewText h3';
+    const text = await page.$eval(googleRating, e => e.textContent);
+    expect(text).toEqual('GOOGLE REVIEWS');
   });
 });
+
+// `describe('fetchRestaurants', async () => {
+//   // beforeEach(async () => {
+//   //   await page.goto(pageUrl, { waitUntil: 'networkidle2' });
+//   // });
+
+//   test('getting reviews from database', () => {
+//     // expect.assertions(1);
+
+//     return axios.get('http://localhost:3002/restaurants/name').then(data => {
+//       var restaurantData = data.data;
+//       expect(typeof restaurantData.reviews).toEqual('array');
+//     });
+//   });
+// });`
